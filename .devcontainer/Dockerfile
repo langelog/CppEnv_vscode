@@ -21,6 +21,8 @@ RUN ln -s /home/vscode/.zprezto/runcoms/zprofile /home/vscode/.zprofile
 RUN ln -s /home/vscode/.zprezto/runcoms/zshenv /home/vscode/.zshenv
 RUN ln -s /home/vscode/.zprezto/runcoms/zshrc /home/vscode/.zshrc
 
+RUN sed -i "40 a \  'git' \\\\" /home/vscode/.zpreztorc
+
 # fix permissions
 RUN chown vscode:vscode -R /home/vscode
 
