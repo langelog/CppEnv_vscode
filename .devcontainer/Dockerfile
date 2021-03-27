@@ -5,8 +5,6 @@ RUN apt-get install cmake zsh git procps sudo neovim wget -y
 RUN apt-get install curl python3-pip exuberant-ctags ack-grep -y
 RUN pip3 install pynvim flake8 pylint isort
 
-RUN mkdir /workspace
-
 RUN useradd -ms /bin/zsh -p $(openssl passwd -1 vscode) vscode
 RUN usermod -aG sudo vscode
 
