@@ -8,4 +8,7 @@ include_directories(
     ./include
 )
 
+add_subdirectory( ./thirdparty/googletest )
+
 add_subdirectory( ./src )
+add_subdirectory( ./tests )
